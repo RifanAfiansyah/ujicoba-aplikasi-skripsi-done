@@ -14,7 +14,7 @@ def generate_frames_web(path_x, model_path, class_names):
 
 @app.route('/', methods=['GET'])
 def home():
-    return render_template('halutama.html')
+    return render_template('index.html')
 
 @app.route("/silat", methods=['GET'])
 def silat():
