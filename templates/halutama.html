@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Gallery Beladiri</title>
+</head>
+
+<body>
+
+    <h1>PILIH BELADIRI</h1>
+    <div id="imageContainer">
+        <div class="imageItem">
+            <a href="/karate">
+                <img src="{{ url_for('static', filename='images/karate.png') }}" alt="Karate" onclick="showImage('Karate')">
+            </a>
+            <p>KARATE</p>
+        </div>
+        <div class="imageItem">
+            <a href="/taekwondo">
+                <img src="{{ url_for('static', filename='images/taekwondo.png') }}" alt="Taekwondo" onclick="showImage('Taekwondo')">
+            </a>
+            <p>TAEKWONDO</p>
+        </div>
+        <div class="imageItem">
+            <a href="/silat">
+                <img src="{{ url_for('static', filename='images/silat.png') }}" alt="Silat" onclick="showImage('Silat')">
+            </a>
+            <p>SILAT</p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/your_script.js') }}"></script>
+
+</body>
+
+</html>
